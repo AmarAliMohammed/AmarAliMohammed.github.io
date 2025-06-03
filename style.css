@@ -1,11 +1,11 @@
-/* General Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Full height layout */
+/* Set full height for root elements */
 html, body {
     height: 100%;
     width: 100%;
@@ -15,11 +15,19 @@ html, body {
     line-height: 1.6;
 }
 
-/* Layout with flexible height */
+/* Flex layout to push footer to the bottom */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+/* Main fills remaining height */
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Header */
@@ -58,14 +66,6 @@ nav a:hover {
     color: #ffdd57;
 }
 
-/* Main content */
-main {
-    flex: 1;
-    padding: 2rem 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 /* Sections */
 section {
     margin-bottom: 3rem;
@@ -85,7 +85,7 @@ li {
     margin-bottom: 0.5rem;
 }
 
-/* Footer */
+/* Footer (Sticky at bottom if content is short) */
 footer {
     background-color: #003366;
     color: white;
@@ -109,7 +109,7 @@ hr {
     margin: 2rem 0;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
     nav a {
         display: block;
@@ -124,3 +124,4 @@ hr {
         font-size: 1rem;
     }
 }
+
