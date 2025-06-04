@@ -30,6 +30,14 @@ main {
     margin: 0 auto;
 }
 
+section img {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* Header */
 header {
     background-color: #003366;
